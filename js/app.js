@@ -4,11 +4,11 @@ app.config(["$routeProvider","$locationProvider",function($routeProvider,$locati
 	$routeProvider
 		.when("/",{
 			controller: "HomeCtrl",
-			templateUrl: "views/home.html"
+			templateUrl: "home.html"
 		})
 		.when("/animal/:animal",{
 			controller:"AnimalCtrl",
-			templateUrl:"views/animal.html"
+			templateUrl:"animal.html"
 		})
 		.otherwise('/');
 		$locationProvider.html5Mode(true);
